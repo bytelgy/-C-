@@ -1,0 +1,31 @@
+本关任务：编写一个程序，应用标准输入函数scanf来接收用户从键盘上输入的两个整数，然后计算它们的和，并用printf函数将结果显示在计算机屏幕上。
+编程要求：在右侧编辑器填写代码。输入两个整数，输出两个整数的和。
+输入形式
+在提示信息"Enter first integer"的下一行输入第1个整数，
+在提示信息"Enter second integer"的下一行输入第2个整数。
+输出形式
+在提示信息"Sum is "后输出两个整数的和，结尾输出换行符。注意：提示信息后有一个空格。
+样例输入/输出
+（带下划线的数据为用户输入）
+
+Enter first integer
+3
+Enter second integer
+5
+Sum is 8
+
+
+代码示例：
+#include <stdio.h>
+int main()
+{
+	int a;
+	int b;
+	printf("Enter first integer\n");	
+	scanf("%d",&a);
+	printf("Enter second integer\n");
+	scanf("%d",&b);
+	int sum;
+	sum=a+b;
+	printf("sum is %d\n",sum);
+} 
