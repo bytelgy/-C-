@@ -1,0 +1,27 @@
+任务描述
+本关任务：使用多个 printf 函数输出一行字符。
+
+相关知识
+为了完成本关任务，你需要掌握
+
+printf 函数输出字符串的相关知识。每一个 printf 函数输出的起始位置都是紧接着上一个 printf 函数输出的结束位置。
+编程要求
+在右侧编辑器中填写代码。使用两个 printf 函数，第一个 printf 函数输出 Welcome 和 一个空格，第二个 printf 函数输出 to C!  和一个换行符（\n）。
+
+测试说明
+平台会对你编写的代码进行测试：
+
+样例输入
+（无输入）
+
+样例输出
+Welcome to C!
+
+
+代码示例：
+#include <stdio.h>
+int main()
+{
+	printf("Welcome ");
+	printf("to C!\n");
+} 
