@@ -1,0 +1,22 @@
+任务描述
+本关任务：使用 printf 函数输出一行字符Welcome to C。
+
+相关知识
+为了完成本关任务，你需要掌握：使用 printf 函数输出字符串相关知识。
+
+编程要求
+根据提示，在右侧编辑器填写代码，输出一行字符 Welcome to C! ，并在行尾输出一个换行符（\n）。
+
+样例输入
+（无输入）
+
+样例输出
+Welcome to C!
+
+
+代码示例：
+#include <stdio.h>
+int main()
+{
+	printf("Welcome to C!\n");
+}
