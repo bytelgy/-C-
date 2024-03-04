@@ -1,0 +1,45 @@
+任务描述
+本关任务：编写一个程序，读入一个圆的半径（浮点数），然后打印其直径、周长和面积。π取3.14159。
+
+相关知识
+为了完成本关任务，你需要掌握：
+
+浮点数的输入和输出。
+编程要求
+在右侧编辑器填写代码。
+
+输入形式
+在提示信息"Input the circle radius:"的下一行输入一个浮点数。。
+
+输出形式
+在提示信息"The diameter is "后输出直径；
+在提示信息"The circumference is "后输出周长；
+在提示信息"The area is "后输出面积。
+输出结果保留两位小数。
+注意：提示信息后有一个空格。
+
+测试说明
+平台会对你编写的代码进行测试：
+
+测试样例
+（带下划线的数据为用户输入）
+Input the circle radius:
+1.0
+The diameter is 2.00
+The circumference is 6.28
+The area is 3.14
+
+
+代码示例：
+#include <stdio.h>
+#define PI 3.1415926
+int main()
+{
+	double a;
+	printf("Input the circle radius:\n");
+	scanf("%lf",&a);
+	printf("The diameter is %.2lf\n",a*2);
+	printf("The circumference is %.2lf\n",2*PI*a);
+	printf("The area is %.2lf\n",PI*a*a);
+	return 0;
+} 
