@@ -1,0 +1,39 @@
+任务描述
+本关任务：编写一个程序，读入一个字符，输出其对应的十进制整数值（ASCII码值）。
+
+相关知识
+为了完成本关任务，你需要掌握：
+
+字符数据的输入输出。
+ASCII码
+编程要求
+在右侧编辑器填写代码。输入一个字符，输出其对应的十进制整数值（ASCII码值）。
+
+输入形式
+在提示信息"Please enter a character: "的下一行输入1个字符。
+
+输出形式
+一个整数，为输入字符的整数形式。
+
+测试说明
+平台会对你编写的代码进行测试。
+
+测试样例
+（带下划线的数据为用户输入）
+
+Please enter a character:
+A
+A's integer equivalent is 65
+
+
+
+代码示例：
+#include <stdio.h>
+int main()
+{
+	char ch;
+	printf("Please enter a cahracter\n");
+	scanf("%c",&ch);
+	printf("%c's integer equivalent is %d",ch,ch);
+	return 0;	
+} 
