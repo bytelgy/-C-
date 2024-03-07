@@ -1,0 +1,42 @@
+任务描述
+本关任务：编写一个程序，读入三个整数，求其平均值并输出。
+
+相关知识
+为了完成本关任务，你需要掌握：
+
+类型转换
+编程要求
+在右侧编辑器填写代码。输入三个整数，输出其平均值。
+
+输入形式
+在提示信息"Please input three integers:"的下一行输入三个整数，
+
+输出形式
+按样例格式输出三个整数及其平均值，结果保留两位小数。
+
+测试说明
+平台会对你编写的代码进行测试：
+
+样例输入/输出
+（带下划线的数据为用户输入）
+
+Please input three integers:
+585 683 859
+The average of 585, 683 and 859 is 709.00
+
+
+代码示例：
+#include <stdio.h>
+int main()
+#include <stdio.h>
+int main()
+{
+	int a,b,c;
+	printf("Please input three integers:\n");
+	scanf("%d%d%d",&a,&b,&c);
+	double average;
+	average=(a+b+c)/3;
+	printf("The average of %d, %d and %d is %.2lf\n",a,b,c,average);
+	return 0;
+	
+}
