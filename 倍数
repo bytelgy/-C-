@@ -1,0 +1,55 @@
+任务描述
+本关任务：读入两个整数，判断第一个整数是否为第二个整数的倍数，并输出判断结果。
+
+相关知识
+为了完成本关任务，你需要掌握：
+
+选择结构if语句
+判断是否是倍数的方法
+判断一个数是否为另一个数的倍数的方法，使用求余运算。判断余数是否为0。
+
+编程要求
+在右侧编辑器填写代码。读入两个整数，判断第一个整数是否为第二个整数的倍数。
+
+输入形式
+在提示信息"Input two integers:"的下一行输入两个整数。
+
+输出形式
+输出第一个整数是否为第二个整数的倍数的信息。
+
+测试说明
+平台会对你编写的代码进行测试：
+
+样例输入/输出1
+（带下划线的数据为用户输入）
+
+Input two integers:
+10 2
+10 is a multiple of 2
+
+
+样例输入/输出2
+（带下划线的数据为用户输入）
+
+Input two integers:
+10 3
+10 is not a multiple of 3
+
+代码示例：
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	int x,y;
+	printf("Input two integers:\n");
+	scanf("%d%d",&x,&y);
+	if(x%y==0)
+	{
+		printf("%d is a multiple of %d\n",x,y);
+	}
+	else
+	{
+		printf("%d is not a multiple of %d\n",x,y);
+	}
+}
