@@ -1,0 +1,37 @@
+【问题描述】
+编写程序，输入5个整数，判断5个整数是否为偶数并输出结果。调用自定义函数isEven判断一个整数是否为偶数。
+函数isEven使用求余运算符来判断整数是否是偶数。该函数接收一个整型实参，该整数是偶数时，函数返回1，否则返回0。
+
+函数isEven的原型为：
+
+int isEven(int number);
+
+【输入形式】
+在提示信息 "Enter an integer: " 的下一行输入一个整数 n，有 5 组输入。
+
+【输出形式】
+n 是否为偶数的信息。
+
+【样例输入/输出】
+Enter an integer: 
+2
+2 is an even integer
+Enter an integer: 
+11
+11 is not an even integer
+Enter an integer: 
+16
+16 is an even integer
+Enter an integer: 
+23
+23 is not an even integer
+Enter an integer: 
+15
+15 is not an even integer
+
+【编程要求】
+在右侧编辑窗口指定位置填写代码。
+
+
+
+代码示例：
