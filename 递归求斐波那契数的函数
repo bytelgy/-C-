@@ -1,0 +1,37 @@
+【问题描述】
+Fibonacci 序列的定义为：
+
+斐波那契数列的递归定义
+
+编写求 fibonacci(n) 的递归函数，函数的原型为：
+
+unsigned long long int fibonacci(unsigned int n);
+
+函数有一个 unsigned int型参数 n。
+函数的返回值为 unsigned long long int类型，为 fibonacci(n) 的值。
+
+【编程要求】
+在右侧编辑窗口指定位置填写代码。
+
+
+
+代码示例：
+#include <stdio.h>
+#include <stdlib.h>
+unsigned long long int fibonacci(unsigned int n);
+int main()
+{
+	unsigned int number;
+	printf("Enter an integers:\n");
+	scanf("%u",&number);
+	printf("Fabonacci(%u) = %llu\n",number,fibonacci(number));
+	return 0;
+}
+unsigned long long int fibonacci(unsigned int n)
+{
+	if(n==0||n==1){
+		return n;
+	}else{
+		return fibonacci(n-1)+fibonacci(n-2);
+	}
+}
