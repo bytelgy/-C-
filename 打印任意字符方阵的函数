@@ -1,0 +1,40 @@
+【问题描述】
+请编写一个函数，其形参为 fillCharacter 和 side。函数的功能是显示由 fillCharacter 组成的、边长为 side 的实心方阵。例如，fillCharacter 为 "#"、side 为 5 时的方阵如下。
+
+#####
+#####
+#####
+#####
+#####
+
+函数原型为：
+
+void square(char fillCharacter, int side);
+
+【编程要求】
+在右侧编辑窗口指定位置填写代码。
+
+
+
+代码示例：
+#include <stdio.h>
+#include <stdlib.h>
+void square(char fillCharacter,int side);
+int main()
+{
+    printf("%s", "Enter a character and the side length: \n");
+	int s;
+   	char c;
+   	scanf("%c%d", &c, &s);
+
+   	square(c, s);
+}
+void square(char fillCharacter,int side)
+{
+	for(int i=0;i<side;i++){
+		for(int j=0;j<side;j++){
+			printf("%c",fillCharacter);
+		}
+		printf("\n");
+	}
+}
