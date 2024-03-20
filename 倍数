@@ -38,7 +38,7 @@ Input two integers:
 代码示例：
 #include <stdio.h>
 #include <stdlib.h>
-
+int ismultiple(int number1,int number2);
 int main()
 {
 	for(int i=0;i<5;i++)
@@ -46,11 +46,15 @@ int main()
 		int a,b;
 		printf("Enter two integers:\n");
 		scanf("%d%d",&a,&b);
-		if(b%a==0){
+		if(ismultiple(a,b)){
 			printf("%d is a multiple of %d\n",b,a);
 		}else{
 			printf("%d is not a multiple of %d\n",b,a);
 		}	
 	} 
 	return 0;
+}
+int ismultiple(int number1,int number2)
+{
+	return !(number2%number1);
 }
