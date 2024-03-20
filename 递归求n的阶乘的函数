@@ -1,0 +1,32 @@
+【问题描述】
+编写求 n 的阶乘的递归函数，n 阶乘的递归定义为：
+n阶乘的递归定义
+
+函数的原型为：
+
+unsigned long long int factorial(unsigned int number);
+
+函数有一个 unsigned int 型参数 number。
+函数的返回值为 unsigned long long int类型，为 number 的阶乘。
+
+【编程要求】
+在右侧编辑窗口指定位置填写代码。
+
+代码示例：
+#include <stdio.h>
+#include <stdlib.h>
+unsigned long long int factorial(unsigned int number);
+int main()
+{
+	unsigned int a;
+	scanf("%u",&a);
+	printf("%llu\n",factorial(a));
+	return 0;
+}
+unsigned long long int factorial(unsigned int number){
+	if(number<=1){
+		return 1;
+	}else{
+		 return (factorial(number-1)*number);
+	}
+}
